@@ -3,11 +3,22 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "plugin:storybook/recommended"
   ],
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": [
+    "@typescript-eslint",
+    "react"
+  ],
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }]
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ]
   }
 }
