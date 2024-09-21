@@ -12,6 +12,7 @@ const config: Config.InitialOptions = {
   },
   // Mock static assets like styles and images
   moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
@@ -19,7 +20,7 @@ const config: Config.InitialOptions = {
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}', // Include all TS/TSX files for coverage
     '!src/**/*.d.ts', // Exclude type declaration files
-    '!src/**/*.stories.ts', // Exclude stories files
+    '!src/**/*.stories.tsx', // Exclude stories files
     '!src/**/index.ts', // Exclude index files, if needed
   ],
   coverageThreshold: {
